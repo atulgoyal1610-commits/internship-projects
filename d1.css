@@ -1,0 +1,18 @@
+.image-container img{width:100px;}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   background-color: aqua;
+    border-radius: 10px;
+    align-items: center;
+
+}
+.bar {
+    display: flex;
+    gap: 20px;
+
+}
+button{
+    padding: 10px 20px;
+}

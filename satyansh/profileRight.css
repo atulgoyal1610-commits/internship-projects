@@ -1,0 +1,10 @@
+.right-div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+}
+.t2{
+    margin: px;
+    font-weight: 800;
+}

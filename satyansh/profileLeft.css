@@ -1,0 +1,81 @@
+.img-div{
+    margin-top: 10px;
+
+}
+.img-div img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px double whitesmoke;
+    border-radius: 50%; 
+}
+.contact-div img{
+    width: 18px;
+    border-radius: 20%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+
+}
+body{
+    background-color: gray;
+}
+.wrapper-div{
+    display: flex;
+    place-self: center;
+    background-color: white;
+    width: 95vw;
+    max-width: 800px;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+
+}
+.left-div{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+padding: 10px;
+color: white;
+background-color: #1a315a;
+}
+.contact-div,.edu-div,.skills-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    font-size: 12px;
+}
+.title{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    display: flex;
+    place-self: start;
+    font-weight: 600;
+}
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: whitesmoke;
+    margin: 10px 0px;
+}
+.contact-loc,.contact-phone,.contact-email{
+    width: 100%;
+    display : flex;
+    align-items:center;
+    padding: 5px;
+    gap:10px;
+}
+.education,.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    width:90%;
+}
