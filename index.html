@@ -1,34 +1,63 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    <title>Internship Projects</title>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>SSPL | Arya P.G.</title>
+   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+   <div class="container">
+      <!-- Navbar -->
+      <div class="navbar">
+         <!-- logo -->
+         <div class="logo">
+            <img src="june 23/A-logo.png" alt="logo" />
+            <div class="companyName">
+               <span> Homedecor_panipat_</span>
+               A complete Home decor solution
+            </div>
+         </div>
 
-    <h1>My Internship Projects</h1>
+         <!-- Menu-Items -->
+         <ul class="daysLink">
+            <li onclick="loadPage('Day 2/b_card1.html')">Topic 1</li>
+            <li onclick="loadPage('Day 3/resume.html')">Topic 2</li>
+            <li onclick="loadPage('june 23/productcard.html')">Topic 3</li>
+            <li onclick="loadPage('june 24/card.html')">Topic 4</li>
+            <li onclick="loadPage('june 25/p_card.html')">Topic 5</li>
+         </ul>
 
-    <button onclick="location.href='Day 1/navbar.html'">
-        Day 1 Project
-    </button>
+         <!-- right button -->
+         <button class="hamburger">
+            <img src="hambuger.png" alt="menu" />
+         </button>
+      </div>
 
-    <button onclick="location.href='Day 2/b_card1.html'">
-        Day 2 Project
-    </button>
+      <iframe
+         id="dayFrame"
+         src="Day 2/b_card1.html"
+         width="100%"
+         height="600"
+         frameborder="0">
+      </iframe>
+   </div>
 
-    <button onclick="location.href='Day 3/resume.html'">
-        Day 3 Resume
-    </button>
+   <script>
+      const hamburger = document.querySelector(".hamburger");
+      const daysLink = document.querySelector(".daysLink");
 
-    <button onclick="location.href='june 23/productcard.html'">
-        Product Card
-    </button>
-    <button onclick="location.href='june 24/card.html'">
-        June 24
-    </button>
-     <button onclick="location.href='june 25/p_card.html'">
-        June 25
-    </button>
-    <iframe src="" frameborder="0"></iframe>
+      hamburger.addEventListener("click", () => {
+         daysLink.classList.toggle("active");
+      });
 
+      function loadPage(page) {
+         let frame = document.getElementById("dayFrame")
+         frame.src = page;
+      }
+   </script>
 </body>
+
 </html>
