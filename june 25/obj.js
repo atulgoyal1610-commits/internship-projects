@@ -1,43 +1,50 @@
 const products = [
   {
-    name: "Laptop",
-    description: "High-performance laptop for work and gaming.",
-    price: "₹50,000",
+    name: "Bathrobe",
+    description: "High-Quality unisex Bathrobe in 100% Pure cotton fabric",
+    price: "₹1,050",
+    image: "bath_robe.png"
   },
   {
-    name: "Smartphone",
-    description: "Latest Android smartphone with amazing camera.",
-    price: "₹25,000",
+    name: "Bedcover 5pc set",
+    description: "A complete bed decor set,<br>1 Bedcover + 2 Pillow covers+ 2 Cushion with filler ",
+    price: "₹1,599",
+    image: "comfort.png"
   },
   {
-    name: "Headphones",
-    description: "Wireless headphones with noise cancellation.",
-    price: "₹3,000",
+    name: "Cushion",
+    description: "High quality Embroidery cushion set with filler",
+    price: "₹750",
+    image: "cushion.png"
   },
   {
-    name: "Smart Watch",
-    description: "Track your health and notifications.",
-    price: "₹5,000",
+    name: "Polo Bedsheet",
+    description: "Polo Embroidery Solid bedsheet Set.<br>Premium Glace Cotton Fabric",
+    price: "₹980",
+    image: "polo.png"
   },
 
   {
-    name: "Panasonic ac",
-    description: "Track your health and notifications.",
-    price: "₹5,000",
+    name: "Toy cum Blanket",
+    description: "A soft Teddy with a Blanket. Soft flannel AC blanket.\nBlanket Size: 48*68 inches",
+    price: "₹800",
+    image: "toy.png"
   },
 ];
 
 const cardContainer = document.getElementById("cardContainer");
 
-const name='satyawan'
+
 cardContainer.innerHTML =  
 products.map(
     (product) => 
       `
         <div class="card">
+            <img src="${product.image}" alt="${product.name}" class="card-img">
             <h2>${product.name}</h2>
             <p>${product.description}</p>
+            <h3>Price</h3>
             <p class="price">${product.price}</p>
         </div>
     `
-  );
+  ).join('');
