@@ -25,6 +25,7 @@
    width: 98%;
    height: 100%;
    object-fit: cover;
+   display: flex;
 
 }
 /* Navbar */
